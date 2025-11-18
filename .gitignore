@@ -1,0 +1,38 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folder
+venv/
+env/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Django database files (if developing locally)
+db.sqlite3
+
+# Wagtail media uploads
+media/
+
+# Environment variables (if using secrets later)
+.env
+*.env
+
+# pytest cache
+.pytest_cache/
+.coverage
+
+# Compiled folders
+build/
+dist/
+
+# Logs
+*.log
+
+# OS-specific junk files
+Thumbs.db
+.DS_Store

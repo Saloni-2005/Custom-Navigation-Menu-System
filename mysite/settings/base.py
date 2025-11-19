@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 from pathlib import Path
+import os
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = PROJECT_DIR.parent
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "weatherapp",
     "menu",
 ]
 
@@ -139,6 +141,11 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = BASE_DIR / "static"
 STATIC_URL = "/static/"
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR, 'static')
+# ]
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = "/media/"

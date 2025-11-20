@@ -1,0 +1,15 @@
+<h2>Student List</h2>
+<a href="{% url 'add_student' %}">➕ Add student</a>
+
+<ul>
+{% for student in students %}
+    <li>
+        {{ student.name }} - Grade: {{ student.grade }}
+
+        <a href="{% url 'edit_student' student.id %}">✏️ Edit</a>
+        <a href="{% url 'delete_student' student.id %}">🗑 Delete</a>
+    </li>
+{% empty %}
+    <li>No students found.</li>
+{% endfor %}
+</ul>

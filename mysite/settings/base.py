@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "weatherapp",
     "students",
-    "menu",
+    "blogapp",
 ]
 
 MIDDLEWARE = [

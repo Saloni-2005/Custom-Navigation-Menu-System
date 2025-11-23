@@ -1,0 +1,14 @@
+<h2>Instructor List</h2>
+<a href="{% url 'add_instructor' %}">➕ Add Instructor</a>
+
+<ul>
+{% for instructor in instructors %}
+    <li>
+        {{ instructor.name }} 
+        Course: {{ instructor.course }}
+        Experience: {{ instructor.experience }} years
+    </li>
+{% empty %}
+    <li>No Instructor found.</li>
+{% endfor %}
+</ul>

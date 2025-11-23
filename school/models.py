@@ -10,3 +10,12 @@ class Student(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Instructor(models.Model):
+    name = models.CharField()
+    course = models.CharField()
+    experience = models.IntegerField()
+    joined_date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name

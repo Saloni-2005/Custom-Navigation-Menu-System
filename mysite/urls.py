@@ -15,7 +15,8 @@ urlpatterns = [
     path("search/", search_views.search, name="search"),
     path("weather/", include("weatherapp.urls")),
     path('school/', include('school.urls')),
-    path('blog/', include('blogapp.urls'))
+    path('blog/', include('blogapp.urls')),
+    path('products/', include('productapp.urls')),
 ]
 
 

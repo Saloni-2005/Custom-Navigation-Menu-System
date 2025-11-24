@@ -17,6 +17,7 @@ urlpatterns = [
     path('school/', include('school.urls')),
     path('blog/', include('blogapp.urls')),
     path('products/', include('productapp.urls')),
+    path('authors/', include('libraryapp.urls')),
 ]
 
 

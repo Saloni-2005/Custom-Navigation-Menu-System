@@ -1,0 +1,19 @@
+<h1>Authors & Their Books</h1>
+
+{% for author in authors %}
+    <div style="border: 1px solid #ccc; padding:10px; margin:10px;">
+        <h2>{{ author.name }}</h2>
+        <p>{{ author.biography }}</p>
+
+        <h3>Books:</h3>
+        <ul>
+            {% for book in author.books.all %}
+                <li>{{ book.title }} ({{ book.published_year }})</li>
+            {% empty %}
+                <li>No books added yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% empty %}
+    <p>No authors found.</p>
+{% endfor %}
